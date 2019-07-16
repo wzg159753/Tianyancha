@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97f920fd-b96a-45e5-bf3b-42689e9d9a95" name="Default" comment="" />
+    <list default="true" id="97f920fd-b96a-45e5-bf3b-42689e9d9a95" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Tianyan/cookies.txt" afterPath="$PROJECT_DIR$/Tianyan/cookies.txt" />
+      <change beforePath="$PROJECT_DIR$/Tianyan/fengkong_spider.py" afterPath="$PROJECT_DIR$/Tianyan/fengkong_spider.py" />
+      <change beforePath="$PROJECT_DIR$/Tianyan/fiddler_requests.py" afterPath="$PROJECT_DIR$/Tianyan/fiddler_requests.py" />
+      <change beforePath="$PROJECT_DIR$/Tianyan/geetest.js" afterPath="$PROJECT_DIR$/Tianyan/geetest.js" />
+      <change beforePath="$PROJECT_DIR$/Tianyan/new_demo.py" afterPath="$PROJECT_DIR$/Tianyan/new_demo.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,13 +17,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/spider$new_demo.coverage" NAME="new_demo Coverage Results" MODIFIED="1562748094844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
+    <SUITE FILE_PATH="coverage/spider$new_demo.coverage" NAME="new_demo Coverage Results" MODIFIED="1563176111810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
     <SUITE FILE_PATH="coverage/spider$demo3.coverage" NAME="demo3 Coverage Results" MODIFIED="1562314670564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/spider$login_tianyancha.coverage" NAME="login_tianyancha Coverage Results" MODIFIED="1562920101831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
+    <SUITE FILE_PATH="coverage/spider$login_tianyancha.coverage" NAME="login_tianyancha Coverage Results" MODIFIED="1563150807612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
     <SUITE FILE_PATH="coverage/spider$monitor.coverage" NAME="monitor Coverage Results" MODIFIED="1562835078770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
     <SUITE FILE_PATH="coverage/spider$tianyan.coverage" NAME="tianyan Coverage Results" MODIFIED="1562570388409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$request_tianyancha.coverage" NAME="request_tianyancha Coverage Results" MODIFIED="1562568642836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/spider$fiddler_requests.coverage" NAME="fiddler_requests Coverage Results" MODIFIED="1562835848137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
+    <SUITE FILE_PATH="coverage/spider$fiddler_requests.coverage" NAME="fiddler_requests Coverage Results" MODIFIED="1563150961856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
     <SUITE FILE_PATH="coverage/spider$demo.coverage" NAME="demo Coverage Results" MODIFIED="1562901381887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$slice_image.coverage" NAME="slice_image Coverage Results" MODIFIED="1562911647374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
     <SUITE FILE_PATH="coverage/spider$send_click.coverage" NAME="send_click Coverage Results" MODIFIED="1562920126632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
@@ -24,8 +31,8 @@
     <SUITE FILE_PATH="coverage/spider$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1562652174174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$tianyan_selenium.coverage" NAME="tianyan_selenium Coverage Results" MODIFIED="1562299271470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$test.coverage" NAME="test Coverage Results" MODIFIED="1562918687403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
-    <SUITE FILE_PATH="coverage/spider$fengkong_spider.coverage" NAME="fengkong_spider Coverage Results" MODIFIED="1562647403557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$fengkong_spider__1_.coverage" NAME="fengkong_spider (1) Coverage Results" MODIFIED="1562895546610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
+    <SUITE FILE_PATH="coverage/spider$fengkong_spider.coverage" NAME="fengkong_spider Coverage Results" MODIFIED="1562922704098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
     <SUITE FILE_PATH="coverage/spider$request_demo.coverage" NAME="request_demo Coverage Results" MODIFIED="1562637579537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tianyan" />
   </component>
   <component name="FileEditorManager">
@@ -33,8 +40,8 @@
       <file leaf-file-name="fengkong_spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tianyan/fengkong_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1519">
-              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="105" column="38" lean-forward="false" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -45,8 +52,8 @@
       <file leaf-file-name="monitor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tianyan/monitor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="125" column="26" lean-forward="true" selection-start-line="125" selection-start-column="26" selection-end-line="125" selection-end-column="26" />
+            <state relative-caret-position="643">
+              <caret line="119" column="37" lean-forward="false" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -57,8 +64,8 @@
       <file leaf-file-name="login_tianyancha.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tianyan/login_tianyancha.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="311" column="27" lean-forward="true" selection-start-line="311" selection-start-column="27" selection-end-line="311" selection-end-column="27" />
+            <state relative-caret-position="323">
+              <caret line="299" column="0" lean-forward="false" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
                 <element signature="e#6928#8008#0" expanded="false" />
@@ -67,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tianyan/test.py">
+      <file leaf-file-name="send_click.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tianyan/send_click.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+            <state relative-caret-position="641">
+              <caret line="154" column="11" lean-forward="false" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="11" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -79,13 +86,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_click.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tianyan/send_click.py">
+      <file leaf-file-name="fiddler_requests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tianyan/fiddler_requests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+            <state relative-caret-position="320">
+              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tianyan/new_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="geetest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tianyan/geetest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5621">
+              <caret line="191" column="42" lean-forward="true" selection-start-line="191" selection-start-column="42" selection-end-line="191" selection-end-column="42" />
+              <folding>
+                <element signature="e#22#2194#0" expanded="false" />
+                <element signature="e#2757#22786#0" expanded="false" />
+                <element signature="e#24838#26021#0" expanded="false" />
+                <element signature="e#26095#26790#0" expanded="false" />
+                <element signature="e#26864#27604#0" expanded="false" />
+                <element signature="e#27678#28326#0" expanded="false" />
+                <element signature="e#28400#28867#0" expanded="false" />
+                <element signature="e#28941#29406#0" expanded="false" />
+                <element signature="e#29483#30889#0" expanded="false" />
+                <element signature="e#30963#31645#0" expanded="false" />
+                <element signature="e#31736#32940#0" expanded="false" />
+                <element signature="e#33031#34225#0" expanded="false" />
+                <element signature="e#34316#35513#0" expanded="false" />
+                <element signature="e#35604#36803#0" expanded="false" />
+                <element signature="e#36893#38087#0" expanded="false" />
+                <element signature="e#37013#38065#0" expanded="false" />
+                <element signature="e#38178#39375#0" expanded="false" />
+                <element signature="e#39463#40011#0" expanded="false" />
+                <element signature="e#39583#39989#0" expanded="false" />
+                <element signature="e#40099#44467#0" expanded="false" />
+                <element signature="e#44544#45359#0" expanded="false" />
+                <element signature="e#45584#51191#0" expanded="false" />
+                <element signature="e#51279#54740#0" expanded="false" />
+                <element signature="e#54827#55293#0" expanded="false" />
+                <element signature="e#55378#55821#0" expanded="false" />
+                <element signature="e#55886#56327#0" expanded="false" />
+                <element signature="e#56006#56305#0" expanded="false" />
+                <element signature="e#56392#56938#0" expanded="false" />
+                <element signature="e#57003#57443#0" expanded="false" />
+                <element signature="e#57507#57950#0" expanded="false" />
+                <element signature="e#58015#58459#0" expanded="false" />
+                <element signature="e#58524#58964#0" expanded="false" />
+                <element signature="e#59028#59475#0" expanded="false" />
+                <element signature="e#59540#59983#0" expanded="false" />
+                <element signature="e#60047#60489#0" expanded="false" />
+                <element signature="e#60554#60999#0" expanded="false" />
+                <element signature="e#61064#61510#0" expanded="false" />
+                <element signature="e#61575#62019#0" expanded="false" />
+                <element signature="e#62083#62524#0" expanded="false" />
+                <element signature="e#62589#64031#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -125,6 +195,9 @@
       <find>/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDA</find>
       <find>list</find>
       <find>天眼查校验</find>
+      <find>forbidden</find>
+      <find>H7z</find>
+      <find>V7z</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,17 +218,17 @@
         <option value="$PROJECT_DIR$/fengkong_spider.py" />
         <option value="$PROJECT_DIR$/demo2.py" />
         <option value="$PROJECT_DIR$/tianyancha_login.py" />
-        <option value="$PROJECT_DIR$/Tianyan/new_demo.py" />
         <option value="$PROJECT_DIR$/Tianyan/test.js" />
         <option value="$PROJECT_DIR$/Tianyan/monitor.py" />
-        <option value="$PROJECT_DIR$/Tianyan/fiddler_requests.py" />
-        <option value="$PROJECT_DIR$/Tianyan/fengkong_spider.py" />
-        <option value="$PROJECT_DIR$/Tianyan/geetest.js" />
         <option value="$PROJECT_DIR$/Tianyan/dianchu.js" />
         <option value="$PROJECT_DIR$/Tianyan/slice_image.py" />
         <option value="$PROJECT_DIR$/Tianyan/test.py" />
         <option value="$PROJECT_DIR$/Tianyan/login_tianyancha.py" />
         <option value="$PROJECT_DIR$/Tianyan/send_click.py" />
+        <option value="$PROJECT_DIR$/Tianyan/fengkong_spider.py" />
+        <option value="$PROJECT_DIR$/Tianyan/fiddler_requests.py" />
+        <option value="$PROJECT_DIR$/Tianyan/new_demo.py" />
+        <option value="$PROJECT_DIR$/Tianyan/geetest.js" />
       </list>
     </option>
   </component>
@@ -165,7 +238,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -188,7 +261,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,10 +268,16 @@
               <item name="spider" type="b2602c69:ProjectViewProjectNode" />
               <item name="spider" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+              <item name="Tianyan" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,21 +305,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.send_click">
-    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.new_demo">
+    <configuration name="fengkong_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tianyan" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="spider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tianyan/fengkong_spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="fiddler_requests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tianyan" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tianyan/fiddler_requests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,6 +363,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="new_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tianyan" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="spider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tianyan/new_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="send_click" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -285,58 +401,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="slice_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tianyan" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tianyan/slice_image.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tianyan" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="spider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tianyan/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.login_tianyancha" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.demo" />
-      <item index="3" class="java.lang.String" itemvalue="Python.slice_image" />
-      <item index="4" class="java.lang.String" itemvalue="Python.send_click" />
+      <item index="1" class="java.lang.String" itemvalue="Python.send_click" />
+      <item index="2" class="java.lang.String" itemvalue="Python.fengkong_spider" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fiddler_requests" />
+      <item index="4" class="java.lang.String" itemvalue="Python.new_demo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.send_click" />
-        <item index="1" class="java.lang.String" itemvalue="Python.login_tianyancha" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.slice_image" />
-        <item index="4" class="java.lang.String" itemvalue="Python.demo" />
+        <item index="0" class="java.lang.String" itemvalue="Python.new_demo" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fiddler_requests" />
+        <item index="2" class="java.lang.String" itemvalue="Python.login_tianyancha" />
+        <item index="3" class="java.lang.String" itemvalue="Python.fengkong_spider" />
+        <item index="4" class="java.lang.String" itemvalue="Python.send_click" />
       </list>
     </recent_temporary>
   </component>
@@ -357,7 +435,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -365,7 +443,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61915624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21190988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1582618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -418,7 +496,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -472,20 +550,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tianyan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tianyan/request_demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1180">
           <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="4715" column="60" lean-forward="false" selection-start-line="4715" selection-start-column="60" selection-end-line="4715" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,9 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="72" column="115" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="115" />
-          <folding>
-            <element signature="e#0#29#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,9 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-40">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,32 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tianyan/new_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tianyan/fiddler_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="95" column="1" lean-forward="false" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tianyan/geetest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="127" column="45" lean-forward="true" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3475" lean-forward="false" selection-start-line="0" selection-start-column="3475" selection-end-line="0" selection-end-column="3475" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,36 +855,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tianyan/fengkong_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1519">
-          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tianyan/monitor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="125" column="26" lean-forward="true" selection-start-line="125" selection-start-column="26" selection-end-line="125" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tianyan/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="105" column="38" lean-forward="false" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -862,8 +870,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tianyan/login_tianyancha.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="311" column="27" lean-forward="true" selection-start-line="311" selection-start-column="27" selection-end-line="311" selection-end-column="27" />
+        <state relative-caret-position="323">
+          <caret line="299" column="0" lean-forward="false" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#6928#8008#0" expanded="false" />
@@ -871,12 +879,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tianyan/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tianyan/send_click.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="85" column="33" lean-forward="true" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+        <state relative-caret-position="641">
+          <caret line="154" column="11" lean-forward="false" selection-start-line="154" selection-start-column="11" selection-end-line="154" selection-end-column="11" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tianyan/monitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="119" column="37" lean-forward="false" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tianyan/fiddler_requests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/env/spider/Lib/site-packages/execjs/_external_runtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tianyan/new_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tianyan/geetest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5621">
+          <caret line="191" column="42" lean-forward="true" selection-start-line="191" selection-start-column="42" selection-end-line="191" selection-end-column="42" />
+          <folding>
+            <element signature="e#22#2194#0" expanded="false" />
+            <element signature="e#2757#22786#0" expanded="false" />
+            <element signature="e#24838#26021#0" expanded="false" />
+            <element signature="e#26095#26790#0" expanded="false" />
+            <element signature="e#26864#27604#0" expanded="false" />
+            <element signature="e#27678#28326#0" expanded="false" />
+            <element signature="e#28400#28867#0" expanded="false" />
+            <element signature="e#28941#29406#0" expanded="false" />
+            <element signature="e#29483#30889#0" expanded="false" />
+            <element signature="e#30963#31645#0" expanded="false" />
+            <element signature="e#31736#32940#0" expanded="false" />
+            <element signature="e#33031#34225#0" expanded="false" />
+            <element signature="e#34316#35513#0" expanded="false" />
+            <element signature="e#35604#36803#0" expanded="false" />
+            <element signature="e#36893#38087#0" expanded="false" />
+            <element signature="e#37013#38065#0" expanded="false" />
+            <element signature="e#38178#39375#0" expanded="false" />
+            <element signature="e#39463#40011#0" expanded="false" />
+            <element signature="e#39583#39989#0" expanded="false" />
+            <element signature="e#40099#44467#0" expanded="false" />
+            <element signature="e#44544#45359#0" expanded="false" />
+            <element signature="e#45584#51191#0" expanded="false" />
+            <element signature="e#51279#54740#0" expanded="false" />
+            <element signature="e#54827#55293#0" expanded="false" />
+            <element signature="e#55378#55821#0" expanded="false" />
+            <element signature="e#55886#56327#0" expanded="false" />
+            <element signature="e#56006#56305#0" expanded="false" />
+            <element signature="e#56392#56938#0" expanded="false" />
+            <element signature="e#57003#57443#0" expanded="false" />
+            <element signature="e#57507#57950#0" expanded="false" />
+            <element signature="e#58015#58459#0" expanded="false" />
+            <element signature="e#58524#58964#0" expanded="false" />
+            <element signature="e#59028#59475#0" expanded="false" />
+            <element signature="e#59540#59983#0" expanded="false" />
+            <element signature="e#60047#60489#0" expanded="false" />
+            <element signature="e#60554#60999#0" expanded="false" />
+            <element signature="e#61064#61510#0" expanded="false" />
+            <element signature="e#61575#62019#0" expanded="false" />
+            <element signature="e#62083#62524#0" expanded="false" />
+            <element signature="e#62589#64031#0" expanded="false" />
           </folding>
         </state>
       </provider>

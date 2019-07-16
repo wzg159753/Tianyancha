@@ -85,6 +85,14 @@ print(challenge)
 print(resp.text)
 
 
+
+
+
+
+
+
+
+
 # # 第三次请求  参数待解密
 # params = {
 #     'gt': data.get('gt'),

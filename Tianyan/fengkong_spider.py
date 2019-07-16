@@ -65,7 +65,6 @@ class RiskInfo(object):
 
         return data
 
-
     def get_url_detail(self, url: str):
         # 下载当天监控的最新企业消息
         response = self.download(url)
@@ -128,16 +127,16 @@ class RiskInfo(object):
             gongsiming = self.get_xpath('//div[@class="header"]/a/text()', html=data_code) # 公司名称
             gongsiming = gongsiming[0] if gongsiming else ''
 
-            title = self.get_xpath('//div[@id="_container_watchDetailPage"]/div[1]//table/thead', html=data_code) # 获取thead
+            title = self.get_xpath('//div[@id="_container_watchDetailPage"]/div[1]//table/thead', html=data_code)  # 获取thead
 
             titles = [i.xpath('./tr//text()') for i in title]  # titles就是所有公司诉讼专利等title
-            tday = self.get_xpath('//div[@id="_container_watchDetailPage"]/div[1]//table/tbody', html=data_code) # 获取每个公司的tbody  也就是诉讼，专利等
+            tday = self.get_xpath('//div[@id="_container_watchDetailPage"]/div[1]//table/tbody', html=data_code)  # 获取每个公司的tbody  也就是诉讼，专利等
             # 获取单个公司的动态名称，如法律诉讼，专利信息等
             t_falv = self.get_xpath('//div[@id="_container_watchDetailPage"]/div[1]//div[@class="watch-timeline"]//div[@class="intro"]/span[1]/text()', html=data_code)
             warnings = self.get_xpath('//div[@id="_container_watchDetailPage"]/div[1]//div[@class="watch-timeline"]//div[@class="intro"]/span[2]/text()', html=data_code)
 
-            gonsi_list = self.get_company_data(titles, tday, t_falv, warnings) # 获取公司详情数据
-            data[gongsiming] = gonsi_list # 拼接成公司的一个公司一个数据
+            gonsi_list = self.get_company_data(titles, tday, t_falv, warnings)  # 获取公司详情数据
+            data[gongsiming] = gonsi_list  # 拼接成公司的一个公司一个数据
             print(data)
             data_info_list.append(data)
 
@@ -154,7 +153,6 @@ class RiskInfo(object):
         """
         with open(f'{file_name}.txt', 'w', encoding='UTF-8') as f:
             f.write(json.dumps(result))
-
 
     def run(self, url):
         """
@@ -181,7 +179,6 @@ class RiskInfo(object):
         ]
         result = self.origin_data(company_list)
         self.save_txt(result, 'news_company_list')
-
 
 
 if __name__ == '__main__':
