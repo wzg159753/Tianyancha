@@ -5,7 +5,6 @@ import redis
 import execjs
 import requests
 
-
 # connect = redis.Redis(db=1, host='192.168.0.110', port=6379)
 #
 #
@@ -126,5 +125,5 @@ class Monitor(object):
 if __name__ == '__main__':
     monitor = Monitor()
     # 企业id列表
-    li = ['2329602531', '811680929', '2449732935']
+    li = ['22822', '3092687032', '3047175221', '799248041', '1398726953', '22342801']
     monitor.run_monitor(li, 'add')

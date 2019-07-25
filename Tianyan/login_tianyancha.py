@@ -2,16 +2,20 @@ import json
 import re
 import random
 import time
+
 import redis
 import requests
 from PIL import Image
 from io import BytesIO
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+from Tianyan.get_user import GetUserMobile
+from xlsxwriter import Workbook
 
 
 class TianYanCha(object):
@@ -193,7 +197,7 @@ class TianYanCha(object):
 
         # 小幅晃动模拟人在终点附近的左右移动
         move_track_list.extend(
-            [1, 1, 1, 1,0, 0.5, 0, 0.5, 0, 0, -1, -1, -0.5, -1, -0.5, -0.5, -1, -1, -0.5, -1, 0.4, 0.4, 0, 0, 0.4, 0.3, 0.1])
+            [0, 0, 0, 1, 1, 1, 1, 1, 0, 0.5, 0, 0.5, 0, 0, -1, -1, -0.5, -1, -1, -0.5, -1, -0.5, -0.5, -1, -1, -0.5, -1, 0.4, 0.4, 0, 0, 0.4, 0.3, 0.1, 0.1, 0.1, 0.1, 0.1])
         print(move_track_list)
         print(sum(move_track_list))
         return move_track_list
@@ -210,44 +214,21 @@ class TianYanCha(object):
         :param distance: 需要移动的距离
         :return: 存放每0.2秒移动的距离
         '''
-        # 初速度
-        v = 0
-        # 单位时间为0.2s来统计轨迹，轨迹即0.2内的位移
-        t = 0.1
-        # 位移/轨迹列表，列表内的一个元素代表0.2s的位移
-        tracks = []
-        # 当前的位移
-        current = 0
-        # 到达mid值开始减速
-        mid = distance * 4 / 5
+        track = list()
+        length = distance - 6
+        x = random.randint(1, 5)
+        while length - x > 4:
+            track.append([x, 0, 0])
+            length = length - x
+            x = random.randint(1, 15)
 
-        distance += 10  # 先滑过一点，最后再反着滑动回来
-
-        while current < distance:
-            if current < mid:
-                # 加速度越小，单位时间的位移越小,模拟的轨迹就越多越详细
-                a = 2  # 加速运动
+        for i in range(length):
+            if distance > 47:
+                track.append([1, 0, random.randint(10, 12) / 100.0])
             else:
-                a = -3  # 减速运动
+                track.append([1, 0, random.randint(13, 14) / 100.0])
+        return track
 
-            # 初速度
-            v0 = v
-            # 0.2秒时间内的位移
-            s = v0 * t + 0.5 * a * (t ** 2)
-            # 当前的位置
-            current += s
-            # 添加到轨迹列表
-            tracks.append(round(s))
-
-            # 速度已经达到v,该速度作为下次的初速度
-            v = v0 + a * t
-
-        # 反着滑动到大概准确位置
-        for i in range(3):
-            tracks.append(-2)
-        for i in range(4):
-            tracks.append(-1)
-        return tracks
 
     # 滑动
     def slide_button(self, tracks):
@@ -272,8 +253,17 @@ class TianYanCha(object):
             self.browser.quit()
 
 
+    def save_redis(self, cookie):
+        """
+        保存到redis 入队
+        :param cookie:
+        :return:
+        """
+        connect = redis.Redis(db=1, host='192.168.0.110', port=6379)
+        vip_cookie = cookie
+        connect.lpush('cookies', vip_cookie)
 
-    def __call__(self, *args, **kwargs):
+    def run(self, *args, **kwargs):
         try:
             # 登录
             self.login()
@@ -302,17 +292,165 @@ class TianYanCha(object):
         except:
             self.browser.quit()
 
-    def save_redis(self, cookie):
-        """
-        保存到redis 入队
-        :param cookie:
-        :return:
-        """
-        connect = redis.Redis(db=1, host='192.168.0.110', port=6379)
-        vip_cookie = cookie
-        connect.lpush('cookies', vip_cookie)
+# ==================================================注册功能=====================================================
+    def register(self, mobile):
+        try:
+            self.browser.get('https://www.tianyancha.com/')
+
+            login = self.wait.until(
+                EC.presence_of_element_located((By.XPATH, '//div[@class="tyc-nav "]/div[@class="nav-item -home"]/a')))
+            login.click()
+
+            resiter = self.wait.until(
+                EC.presence_of_element_located((By.XPATH, '//div[@class="modulein modulein2 message_box  f-base collapse in"]/div[@class=" login-bottom"]/div')))
+            resiter.click()
+
+            input = self.wait.until(
+                EC.presence_of_element_located((By.XPATH, '//input[@class="input contactphone"]')))
+            input.send_keys(mobile)
+
+            time.sleep(0.4)
+            btn = self.wait.until(
+                EC.presence_of_element_located((By.XPATH, '//div[@class="input-group-btn btn -lg btn-primary"]')))
+            time.sleep(0.5)
+            btn.click()
+
+            time.sleep(1)
+
+        except:
+            print('注册错误')
+            time.sleep(5)
+            self.run_reg()
+
+    def click_register(self, sms_code, mobile):
+        sms_input = self.wait.until(
+            EC.presence_of_element_located((By.XPATH, '//input[@class="input contactscode"]')))
+        sms_input.send_keys(sms_code)
+
+        time.sleep(1)
+        password = self.wait.until(
+            EC.presence_of_element_located((By.XPATH, '//div[@class="login-word"]/input[@class="input contactword"]')))
+        password.send_keys('asdf1123')
+
+        time.sleep(0.5)
+        register_input = self.wait.until(
+            EC.presence_of_element_located((By.XPATH, '//div[@class="btn -hg btn-primary -block"]')))
+        register_input.click()
+
+        nogap_image, gap_image = self.get_captcha()
+        # 对比两张图片的像素点 找出位移
+        distance = self.get_gap_offset(nogap_image, gap_image)
+        # print(distance)
+        tracks = self.get_tracks(distance)
+        time.sleep(1)
+        self.slide_button(tracks)
+
+        user = self.wait.until(
+            EC.presence_of_element_located((By.XPATH, '//a[@class="title link-white"]')))
+        if user:
+            print('注册成功')
+            with open('../mobile3.txt', 'a+') as f:
+                f.write(f'mobile: {mobile}, password: asdf1123' + '\n')
+            self.browser.delete_all_cookies()
+            time.sleep(1)
+
+        else:
+            time.sleep(2)
+            nogap_image, gap_image = self.get_captcha()
+            # 对比两张图片的像素点 找出位移
+            distance = self.get_gap_offset(nogap_image, gap_image)
+            # print(distance)
+            tracks = self.get_tracks(distance)
+            time.sleep(1)
+            self.slide_button(tracks)
+            time.sleep(1)
+            self.browser.delete_all_cookies()
+            print('注册失败')
+
+        time.sleep(1)
+
+
+
+
+    def run_reg(self):
+        get_user = GetUserMobile('winshell256', '123123123')
+
+        while True:
+            time.sleep(1)
+            mobile = get_user.get_mobile()
+            if mobile == '2005':
+                time.sleep(20)
+                self.run_reg()
+            try:
+                # 登录
+                # time.sleep(1)
+                self.register(mobile)
+                # 获取两张验证码图片
+                nogap_image, gap_image = self.get_captcha()
+                # 对比两张图片的像素点 找出位移
+                distance = self.get_gap_offset(nogap_image, gap_image)
+                # print(distance)
+                tracks = self.get_tracks(distance)
+                self.slide_button(tracks)
+
+                # time.sleep(2)
+                # hidden = self.wait.until(
+                #     EC.presence_of_element_located((By.XPATH, '//div[@class="gt_holder gt_popup gt_show"]')))
+                # if hidden:
+                #     self.run_reg()
+
+                sms_code = get_user.get_sms_code(mobile)
+                if sms_code == 0:
+                    self.run_reg()
+                else:
+                    self.click_register(sms_code, mobile)
+
+            except:
+                print('error')
+
+
+def sheet2_w(sample_date):
+    ws = Workbook('mobile.xlsx') # 打开一个Excel表格
+    wb = ws.add_worksheet('Sheet3') # 添加一个sheet
+    # ws.add_worksheet('Sheet1') # 选中一个
+
+    # 构造表格属性
+    STYLE_HEADER = {'font_size': 9, 'border': 1, 'bold': 1, 'bg_color': '#B4C6E7', 'align': 'center', 'valign': 'vcenter'}
+    STYLE_TEXT = {'font_size': 9, 'border': 1}
+    STYLE_NUMBER = {'font_size': 9, 'border': 1, 'num_format': '0.00'}
+
+    # 设置表格属性
+    style_header = ws.add_format(STYLE_HEADER)
+    style_text = ws.add_format(STYLE_TEXT)
+    style_number = ws.add_format(STYLE_NUMBER)
+
+    # 添加表头
+    header = ["mobile", "password"]
+    # 在第一行设置表头
+    wb.write_row('A1', header, style_header)
+
+    # 宽度
+    widths = [15, 15]
+    # 设置宽度
+    for ind, wid in enumerate(widths):
+        # print(ind, wid)
+        wb.set_column(ind, ind, wid)
+
+    #
+    for ind, data in enumerate(sample_date):
+        # ind+1 表示第几行， 第二个参数是第几列， 第三个参数是值， 第四个参数是属性
+        wb.write(ind + 1, 0, data[0], style_text)
+        wb.write(ind + 1, 1, data[1], style_number)
+
+    # 添加完成就关闭
+    ws.close()
+
 
 
 if __name__ == '__main__':
     tianyan = TianYanCha(username='13853275090', password='wzg159753')
-    tianyan()
+    tianyan.run()
+    # tianyan.run_reg()
+    # with open('mobile.txt', 'r') as f:
+    #     for i in range(200):
+    #         print(f.readline())

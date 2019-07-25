@@ -13,6 +13,8 @@ from time import sleep
 import random
 import numpy as np
 
+from Tianyan.get_user import GetUserMobile
+
 
 
 
@@ -289,8 +291,177 @@ def main(username, password):
     return browser
 
 
+def login2(username, password):
+    # 定义为全局变量，方便其他模块使用
+    global url, browser, wait
+
+    # 登录界面的url
+    url = 'https://www.tianyancha.com/login'
+    # 实例化一个chrome浏览器
+    chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument("--headless")
+    browser = webdriver.Chrome(options=chrome_options)
+    browser.set_window_size(1920, 1080)
+    # 打开登录页面
+    browser.get(url)
+    sleep(1)
+    # 设置等待超时
+    wait = WebDriverWait(browser, 20)
+
+def register(mobile):
+    try:
+
+        browser.get('https://www.tianyancha.com/')
+        login = wait.until(
+            EC.presence_of_element_located((By.XPATH, '//div[@class="tyc-nav "]/div[@class="nav-item -home"]/a')))
+        login.click()
+
+        resiter = wait.until(
+            EC.presence_of_element_located((By.XPATH,
+                                            '//div[@class="modulein modulein2 message_box  f-base collapse in"]/div[@class=" login-bottom"]/div')))
+        resiter.click()
+        input = wait.until(
+            EC.presence_of_element_located((By.XPATH, '//input[@class="input contactphone"]')))
+        input.send_keys(mobile)
+
+        time.sleep(0.4)
+        btn = wait.until(
+            EC.presence_of_element_located((By.XPATH, '//div[@class="input-group-btn btn -lg btn-primary"]')))
+        time.sleep(0.5)
+        btn.click()
+        time.sleep(1)
+
+    except:
+        print('注册错误')
+        time.sleep(5)
+        # run_reg()
+
+def click_register(sms_code, mobile):
+    sms_input = wait.until(
+        EC.presence_of_element_located((By.XPATH, '//input[@class="input contactscode"]')))
+    sms_input.send_keys(sms_code)
+
+    time.sleep(1)
+    password = wait.until(
+        EC.presence_of_element_located((By.XPATH, '//div[@class="login-word"]/input[@class="input contactword"]')))
+    password.send_keys('asdf1123')
+
+    time.sleep(0.5)
+    register_input = wait.until(
+        EC.presence_of_element_located((By.XPATH, '//div[@class="btn -hg btn-primary -block"]')))
+    register_input.click()
+
+    time.sleep(1)
+    # 获取缺口图片及其位置信息
+    bg, bg_position = get_image_info('bg')
+    # 获取完整图片及其位置信息
+    fullbg, fullbg_position = get_image_info('fullbg')
+    # 将混乱的缺口图片裁剪成小图，获取两行的位置信息
+    bg_first_line_img, bg_second_line_img = Corp(bg, bg_position)
+    # 将混乱的完整图片裁剪成小图，获取两行的位置信息
+    fullbg_first_line_img, fullbg_second_line_img = Corp(fullbg, fullbg_position)
+    # 根据两行图片信息拼接出缺口图片正确排列的图片
+    bg_image = put_imgs_together(bg_first_line_img, bg_second_line_img, 'bg.jpg')
+    # 根据两行图片信息拼接出完整图片正确排列的图片
+    fullbg_image = put_imgs_together(fullbg_first_line_img, fullbg_second_line_img, 'fullbg.jpg')
+    # 计算滑块移动距离
+    distance = get_distance(bg_image, fullbg_image)
+    # 计算移动轨迹
+    trace = get_trace(distance, 12, 'ease_out_expo')
+    # 移动滑块
+    move_to_gap(trace)
+
+    user = wait.until(
+        EC.presence_of_element_located((By.XPATH, '//a[@class="title link-white"]')))
+    if user:
+        print('注册成功')
+        with open('mobile3.txt', 'a+') as f:
+            f.write(f'mobile: {mobile}, password: asdf1123' + '\n')
+        browser.delete_all_cookies()
+        # browser.quit()
+
+    else:
+        time.sleep(2)
+        # 获取缺口图片及其位置信息
+        bg, bg_position = get_image_info('bg')
+        # 获取完整图片及其位置信息
+        fullbg, fullbg_position = get_image_info('fullbg')
+        # 将混乱的缺口图片裁剪成小图，获取两行的位置信息
+        bg_first_line_img, bg_second_line_img = Corp(bg, bg_position)
+        # 将混乱的完整图片裁剪成小图，获取两行的位置信息
+        fullbg_first_line_img, fullbg_second_line_img = Corp(fullbg, fullbg_position)
+        # 根据两行图片信息拼接出缺口图片正确排列的图片
+        bg_image = put_imgs_together(bg_first_line_img, bg_second_line_img, 'bg.jpg')
+        # 根据两行图片信息拼接出完整图片正确排列的图片
+        fullbg_image = put_imgs_together(fullbg_first_line_img, fullbg_second_line_img, 'fullbg.jpg')
+        # 计算滑块移动距离
+        distance = get_distance(bg_image, fullbg_image)
+        # 计算移动轨迹
+        trace = get_trace(distance, 12, 'ease_out_expo')
+        # 移动滑块
+        move_to_gap(trace)
+        print('注册失败')
+
+    time.sleep(1)
+    browser.close()
+
+
+
+
+def run_reg():
+    get_user = GetUserMobile('winshell256', '123123123')
+
+    while True:
+        time.sleep(1)
+        mobile = get_user.get_mobile()
+        if mobile == '2005':
+            time.sleep(20)
+            run_reg()
+        try:
+            # 登录
+            # time.sleep(1)
+            login2('d', 'a')
+            register(mobile)
+            # 获取缺口图片及其位置信息
+            bg, bg_position = get_image_info('bg')
+            # 获取完整图片及其位置信息
+            fullbg, fullbg_position = get_image_info('fullbg')
+            # 将混乱的缺口图片裁剪成小图，获取两行的位置信息
+            bg_first_line_img, bg_second_line_img = Corp(bg, bg_position)
+            # 将混乱的完整图片裁剪成小图，获取两行的位置信息
+            fullbg_first_line_img, fullbg_second_line_img = Corp(fullbg, fullbg_position)
+            # 根据两行图片信息拼接出缺口图片正确排列的图片
+            bg_image = put_imgs_together(bg_first_line_img, bg_second_line_img, 'bg.jpg')
+            # 根据两行图片信息拼接出完整图片正确排列的图片
+            fullbg_image = put_imgs_together(fullbg_first_line_img, fullbg_second_line_img, 'fullbg.jpg')
+            # 计算滑块移动距离
+            distance = get_distance(bg_image, fullbg_image)
+            # 计算移动轨迹
+            trace = get_trace(distance, 12, 'ease_out_expo')
+            # 移动滑块
+            move_to_gap(trace)
+
+            # time.sleep(2)
+            # hidden = self.wait.until(
+            #     EC.presence_of_element_located((By.XPATH, '//div[@class="gt_holder gt_popup gt_show"]')))
+            # if hidden:
+            #     self.run_reg()
+
+            sms_code = get_user.get_sms_code(mobile)
+            if sms_code == 0:
+                browser.quit()
+                run_reg()
+            else:
+                click_register(sms_code, mobile)
+
+        except:
+            print('error')
+            browser.quit()
+
+
 
 # 程序入口
 if __name__ == '__main__':
     main('13853275090', 'wzg159753')
+    # run_reg()
 
